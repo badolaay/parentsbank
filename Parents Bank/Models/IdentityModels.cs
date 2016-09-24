@@ -29,5 +29,11 @@ namespace Parents_Bank.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<Parents_Bank.Models.Account> Accounts { get; set; }
+
+        public System.Data.Entity.DbSet<Parents_Bank.Models.Transaction> Transactions { get; set; }
+
+        public System.Data.Entity.DbSet<Parents_Bank.Models.WishListItem> WishListItems { get; set; }
     }
 }

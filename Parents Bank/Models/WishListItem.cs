@@ -9,8 +9,8 @@ namespace Parents_Bank.Models
     public class WishListItem
     {
         public long Id { get; set; }
-        public long AccountId { get; set; }
-        public Account Account { get; set; }
+        public virtual long AccountId { get; set; }
+        public virtual Account Account { get; set; }
         public DateTime DateAdded { get; set; }
         [Required]
         public double Cost { get; set; }
