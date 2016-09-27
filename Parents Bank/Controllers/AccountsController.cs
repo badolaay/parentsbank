@@ -10,6 +10,7 @@ using Parents_Bank.Models;
 
 namespace Parents_Bank.Controllers
 {
+    [Authorize]
     public class AccountsController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
